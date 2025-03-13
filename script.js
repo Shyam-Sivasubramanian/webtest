@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 // Function to handle click events on images.
 function handleClick(contributorName) {
-  //alert("You clicked on " + contributorName);
+  alert("You clicked on " + contributorName);
   // Optionally, redirect to another page:
   // window.location.href = "profile.html";
 }
