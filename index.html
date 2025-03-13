@@ -6,57 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- jQuery UI CSS -->
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background: #f9f9f9;
-    }
-    h1 {
-      text-align: center;
-    }
-    #container {
-      width: 100%;
-      max-width: 960px;
-      height: 600px;
-      margin: 20px auto;
-      position: relative;
-      border: 1px solid #ccc;
-      background: #fff;
-    }
-    .draggable {
-      width: 150px;
-      height: auto;
-      position: absolute; /* required for free dragging */
-      cursor: move;
-    }
-  </style>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <h1>Contributor Directory</h1>
   <div id="container">
-    <!-- Adjust the src attribute to point to your local images (e.g., in an 'images' folder) -->
+    <!-- Ensure the images folder contains image1.jpg and image2.jpg -->
     <img src="images/image1.jpg" alt="Contributor 1" class="draggable" style="top:20px; left:20px;" onclick="handleClick('Contributor 1')">
     <img src="images/image2.jpg" alt="Contributor 2" class="draggable" style="top:20px; left:200px;" onclick="handleClick('Contributor 2')">
-    <!-- Add more images as needed -->
   </div>
-
+  
   <!-- jQuery and jQuery UI Scripts -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-  <script>
-    // Enable draggable functionality for images once the document is ready
-    $(document).ready(function(){
-      $(".draggable").draggable();
-    });
-
-    // Function to handle image click events.
-    function handleClick(contributorName) {
-      alert("You clicked on " + contributorName);
-      // Optionally, redirect to a contributor-specific page:
-      // window.location.href = "profile.html";
-    }
-  </script>
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
